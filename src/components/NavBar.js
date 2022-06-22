@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStore, faHome, faUser, faShoppingCart, faAddressCard, faSignInAlt} from '@fortawesome/free-solid-svg-icons'
-
+import { faStore, faHome, faUser, faAddressCard, faSignInAlt} from '@fortawesome/free-solid-svg-icons'
+import CartWidget from './CartWidget';
 export default function NavBar() {  
     return (
       <div className="navbar">
@@ -24,7 +24,7 @@ export default function NavBar() {
           <a className="nav-link" href="#"><FontAwesomeIcon icon= {faUser} /> Register</a>
         </li>
         <li className="navbar-item">
-          <a className="nav-link" href="#"><FontAwesomeIcon icon={faShoppingCart}/> Cart</a>
+          <a className='nav-link' href="#"><CartWidget /></a>
         </li>
       </div>
     );
