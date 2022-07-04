@@ -10,7 +10,7 @@ const App = () => {
       </header>
       <body className="App-body">
         <div className="list-of-items">
-          <ItemListContainer title="a placeholder title" count={0} stock={50} />
+          <ItemListContainer />
         </div>
       </body>
     </div>
